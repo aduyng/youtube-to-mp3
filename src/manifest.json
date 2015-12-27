@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube to MP3 Downloader for Google Chrome",
+  "version": "1.0.0",
+  "description": "Download the MP3 file from Youtube video with one click",
+  "icons": {
+    "16": "images/512.png",
+    "32": "images/512.png",
+    "48": "images/512.png",
+    "128": "images/512.png",
+    "256": "images/512.png",
+    "512": "images/512.png"
+  },
+  "author": "Dewey Nguyen <aduyng@gmail.com>",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch?v=*",
+        "http://www.youtube.com/watch?v=*"
+      ],
+      "css": [
+        "content-script/content-script.css"
+      ],
+      "js": [
+        "libs/lodash.min.js",
+        "libs/bluebird.min.js",
+        "libs/jquery-2.1.4.min.js",
+        "content-script/content-script.js"
+      ]
+    },
+    {
+      "matches": [
+        "http://www.youtube-mp3.org/*"
+      ],
+      "js": [
+        "libs/lodash.min.js",
+        "libs/bluebird.min.js",
+        "libs/jquery-2.1.4.min.js",
+        "content-script/youtube-mp3.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
