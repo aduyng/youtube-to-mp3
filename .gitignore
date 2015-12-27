@@ -1,5 +1,6 @@
 .idea
 *.map
+*.zip
 ### Node template
 # Logs
 logs
