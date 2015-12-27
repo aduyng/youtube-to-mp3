@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Youtube to MP3 Downloader for Google Chrome",
-  "version": "1.0.0",
-  "description": "Download the MP3 file from Youtube video with one click",
+  "name": "Youtube to MP3",
+  "version": "1.0.1",
+  "description": "Download the MP3 file from a Youtube Video with one click",
   "icons": {
     "16": "images/512.png",
     "32": "images/512.png",
