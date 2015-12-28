@@ -1,5 +1,5 @@
 function start () {
-  if ($('#ytmp3').size() === 0) {
+  if (/\?v=.+/.test(window.location.toString()) && $('#ytmp3').size() === 0) {
     var TEMPLATE = _.template(
       '<div id="ytmp3">' +
       '<button id="ytmp3-button" class="yt-uix-button yt-uix-button-size-default yt-uix-button-default">Download MP3</button>' +
