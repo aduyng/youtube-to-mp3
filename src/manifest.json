@@ -39,8 +39,5 @@
         "content-script/youtube-mp3.js"
       ]
     }
-  ],
-  "permissions": [
-    "tabs"
   ]
 }
