@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Youtube to MP3",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Download the MP3 file from a Youtube Video with one click",
   "icons": {
     "16": "images/512.png",

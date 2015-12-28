@@ -16,8 +16,12 @@ function start () {
       downloadWindow.moveTo(0, window.screen.availHeight + 10);
       downloadWindow.blur();
       self.focus();
-    });
 
+      button.text('Downloading...').prop('disabled', true);
+      setTimeout(function() {
+        button.text('Download').prop('disabled', false);
+      }, 3000);
+    });
 
     function injectButton () {
       if ($('#watch-headline-title').size() > 0) {
